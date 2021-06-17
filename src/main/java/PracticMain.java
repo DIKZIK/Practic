@@ -84,6 +84,7 @@ public class PracticMain {
                 }
             } else {
                 System.out.println("Некорректный ввод");
+                return;
             }
         }
         System.out.println("Исходный текст: " + text);
@@ -148,7 +149,7 @@ public class PracticMain {
             }
         }
 
-        System.out.println("Изменение всех возможных слов текста на существительные в дательном падеже:");
+        System.out.println("Изменение всех возможных слов текста на существительные в именительном падеже:");
         for (List<String> words : listBasicPhase) {
             for (String word : words) {
                 jMorfSdk.getAllCharacteristicsOfForm(word).forEach((form) -> {
